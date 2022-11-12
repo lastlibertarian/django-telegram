@@ -18,5 +18,3 @@ pyrobot = Client(name=f'pyrogram_{username}', api_id=api_id, api_hash=api_hash)
 def login():
     with pyrobot:
         pyrobot.send_message("me", "**Pyrogram**")
-
-login()
