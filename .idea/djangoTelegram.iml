@@ -18,6 +18,8 @@
       <sourceFolder url="file://$MODULE_DIR$/djangoTelegram" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv/local/bin" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/dataSources" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/ZeppelinRemoteNotebooks" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
