@@ -9,6 +9,7 @@
 Icon
 .ini
 .session
+.log
 
 # Thumbnails
 ._*
