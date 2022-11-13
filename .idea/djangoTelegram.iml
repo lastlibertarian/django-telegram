@@ -18,8 +18,10 @@
       <sourceFolder url="file://$MODULE_DIR$/djangoTelegram" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv/local/bin" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/telegram-django" />
+      <excludeFolder url="file://$MODULE_DIR$/django_env" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.9 (django-telegram)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">
