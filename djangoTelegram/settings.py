@@ -134,7 +134,56 @@ STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
 
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = BASE_DIR / 'media'
+
+# FILE_PATH_FIELD_DIRECTORY = MEDIA_ROOT / 'photo'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '%(levelname)s %(asctime)s %(module)s %(process)d %(thread)d %(message)s'
+        },
+        'simple': {
+            'format': '%(levelname)s %(message)s'
+        },
+    },
+    'handlers': {
+        'console': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple'
+        },
+        'users': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'users.log',
+            'formatter': 'verbose'
+        },
+    },
+    'loggers': {
+        # 'app_users.views': {
+        #     'handlers': ['users'],
+        #     'level': 'DEBUG',
+        #     'propagate': False,
+        # },
+        # 'app_cart.views': {
+        #     'handlers': ['users'],
+        #     'level': 'DEBUG',
+        #     'propagate': False,
+        # },
+    },
+    'root': {
+        'handlers': ['console'],
+        'level': 'INFO',
+    },
+}
+
